@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1092</width>
+    <height>661</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#begin{
+	background-color: rgba(255,0,0,255);
+	color:rgba(255,255,255,255);
+	border-radius:5px
+}
+
+QPushButton#begin:hover{
+	background-color: rgba(0,255,0,255);
+	color:rgba(0,0,0,255);
+}
+
+QPushButton#begin:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color:rgba(50, 210, 25, 255);
+}
+
+QPushButton#quit{
+	background-color: rgba(255,0,0,255);
+	color:rgba(255,255,255,255);
+	border-radius:5px
+}
+
+QPushButton#quit:hover{
+	background-color: rgba(0,255,0,255);
+	color:rgba(0,0,0,255);
+}
+
+QPushButton#quit:pressed{
+	padding-left:5px;
+	padding-top:5px;
+	background-color:rgba(50, 210, 25, 255);
+}
+</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>1000</width>
+     <height>510</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/img/4data.png);
+background-color: rgb(255, 255, 255);
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+border-top-left-radius: 25px;
+border-bottom-left-radius: 25px;</string>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>-1</number>
+   </property>
+   <property name="textInteractionFlags">
+    <set>Qt::LinksAccessibleByMouse</set>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>59</x>
+     <y>470</y>
+     <width>980</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="tabletTracking">
+    <bool>false</bool>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="toolTipDuration">
+    <number>-1</number>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar {
+	
+	background-color: rgb(41, 57, 91);
+	color: rgb(200, 200, 200);
+	border-style:none;
+	border-radius:25px;
+	text-align:center;
+}
+QProgressBar::chunk{
+	border-radius:25px;
+	background-color:qlineargradient(spread:pad,x1:0,y1:0.511364,x2:1,y2:0.523,stop:0 rgba(170,85,255,255),stop:1 rgba(0,235,235,235));
+}
+color: rgb(41, 57, 91);</string>
+   </property>
+   <property name="minimum">
+    <number>0</number>
+   </property>
+   <property name="value">
+    <number>6</number>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+   <property name="invertedAppearance">
+    <bool>false</bool>
+   </property>
+   <property name="textDirection">
+    <enum>QProgressBar::TopToBottom</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="begin">
+   <property name="geometry">
+    <rect>
+     <x>635</x>
+     <y>410</y>
+     <width>170</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Impact</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border-width: 1px;border-style: solid;border-color: rgb(0, 0, 0);
+font: 19px &quot;Impact&quot;;</string>
+   </property>
+   <property name="text">
+    <string>START</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="quit">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>70</y>
+     <width>40</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Impact</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border-width: 1px;border-style: solid;border-color: rgb(0, 0, 0);
+font: 19px &quot;Impact&quot;;</string>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="selectCity">
+   <property name="geometry">
+    <rect>
+     <x>465</x>
+     <y>410</y>
+     <width>170</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>9</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 9pt &quot;Arial&quot;;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border-width: 1px;border-style: solid;border-color: rgb(0, 0, 0);background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select City</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Rotterdam</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Amsterdam</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Den Haag</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Utrecht</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="selectCity_2">
+   <property name="geometry">
+    <rect>
+     <x>295</x>
+     <y>410</y>
+     <width>170</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>9</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgba(0,0,0,255);
+
+font: 9pt &quot;Arial&quot;;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border-width: 1px;border-style: solid;border-color: rgb(0, 0, 0);background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select Country</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Rotterdam</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Amsterdam</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Den Haag</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Utrecht</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>quit</tabstop>
+  <tabstop>begin</tabstop>
+ </tabstops>
+ <resources>
+  <include location="loginres.qrc"/>
+ </resources>
+ <connections/>
+</ui>
