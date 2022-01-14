@@ -15,6 +15,7 @@ class Main(QtWidgets.QDialog):
         self.setAttribute(Qt.WA_TranslucentBackground)
         #-----------------------------
 
+
         self.show()
         self.quit.clicked.connect(self.close)
         self.count = 6 
@@ -36,7 +37,24 @@ class Main(QtWidgets.QDialog):
         self.timer2.timeout.connect(self.timer_TimeOut)
 
 
+        #windows moving without frame---A
+    def mousePressEvent(self, e):
+        if e.button() == Qt.LeftButton:
+            self.ismoving = True
+            self.start_point = e.globalPos()
+            self.window_point = self.frameGeometry().topLeft()
+    def mouseMoveEvent(self, e):
+        if self.ismoving:
+            relpos = e.globalPos() - self.start_point
+            self.move(self.window_point + relpos) 
+    def mouseReleaseEvent(self, e):
+        self.ismoving = False
+    #-----------------------------------
+
+
 if __name__ == "__main__":
     app =  QtWidgets.QApplication(sys.argv)
     window = Main()
+    # window.show()
+    # sys.exit(app.exec_())
     app.exec_()
