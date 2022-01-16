@@ -285,7 +285,7 @@ border-width: 1px;border-style: solid;border-color: rgb(0, 0, 0);background-colo
     </property>
    </item>
   </widget>
-  <widget class="QComboBox" name="selectCity_2">
+  <widget class="QComboBox" name="selectCountry">
    <property name="geometry">
     <rect>
      <x>295</x>
