@@ -1742,12 +1742,12 @@ font: 25px &quot;Impact&quot;;</string>
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="timeShow">
+   <widget class="QLabel" name="timeShow1">
     <property name="geometry">
      <rect>
-      <x>370</x>
+      <x>550</x>
       <y>570</y>
-      <width>501</width>
+      <width>321</width>
       <height>41</height>
      </rect>
     </property>
@@ -1756,10 +1756,30 @@ font: 25px &quot;Impact&quot;;</string>
 font: 25px &quot;Impact&quot;;</string>
     </property>
     <property name="text">
-     <string>Time</string>
+     <string>, Sunday, 16 January 2022</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="timeShow2">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>570</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 25px &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>13:40:38</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
    <zorder>backgroun</zorder>
@@ -1820,7 +1840,8 @@ font: 25px &quot;Impact&quot;;</string>
    <zorder>saat8</zorder>
    <zorder>tempHour1_2</zorder>
    <zorder>error</zorder>
-   <zorder>timeShow</zorder>
+   <zorder>timeShow1</zorder>
+   <zorder>timeShow2</zorder>
   </widget>
  </widget>
  <tabstops>

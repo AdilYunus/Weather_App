@@ -345,6 +345,26 @@ border-width: 1px;border-style: solid;border-color: rgb(0, 0, 0);background-colo
     </property>
    </item>
   </widget>
+  <widget class="QLabel" name="welcome">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>475</y>
+     <width>801</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 25px &quot;Impact&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Welcome to Weather App</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
  </widget>
  <tabstops>
   <tabstop>quit</tabstop>

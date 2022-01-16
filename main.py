@@ -33,6 +33,7 @@ class Main(QtWidgets.QDialog):
             self.cams = weather_app.Weather_App()
             self.cams.show()
             self.close()
+        # begin progress timer
     def begin1(self):
         self.timer2.timeout.connect(self.timer_TimeOut)
 
@@ -49,7 +50,7 @@ class Main(QtWidgets.QDialog):
             self.move(self.window_point + relpos) 
     def mouseReleaseEvent(self, e):
         self.ismoving = False
-    #-----------------------------------
+    #------------------------------------
 
 
 if __name__ == "__main__":

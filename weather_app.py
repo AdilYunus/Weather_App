@@ -1,5 +1,5 @@
 from PyQt5 import QtWidgets, uic, QtCore,Qt
-from PyQt5.QtCore import QTime, QTimer, Qt
+from PyQt5.QtCore import QTime, QTimer, Qt, QDateTime,QDate
 import sys
 import os
 import json
@@ -18,7 +18,12 @@ class Weather_App(QtWidgets.QDialog):
         # enter tusuyla da sonraki ikrana gidebilir -A
         self.search.setAutoDefault(True)
         #------------------------
+        #for showtime methode start timer
+        timer = QTimer(self)
+        timer.timeout.connect(self.showtime)
+        timer.start()
         self.show()
+        #--------------------------
         #------quit button--A
         self.quit.clicked.connect(self.close)
 
@@ -58,7 +63,15 @@ class Weather_App(QtWidgets.QDialog):
     def mouseReleaseEvent(self, e):
         self.ismoving = False
     #-----------------------------------
-
+    #Show correntTime methode   
+    def showtime(self):
+        # now = QDate.currentDate()
+        datetime = QDateTime.currentDateTime()
+        text1=datetime.toString("dddd , dd  MMMM  yyyy")
+        text2 = datetime.toString(" hh:mm:ss")
+        self.timeShow1.setText(text1)
+        self.timeShow2.setText(text2)
+    #--------------------------------------
 
 
 if __name__ == "__main__":
