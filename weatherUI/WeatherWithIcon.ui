@@ -295,11 +295,13 @@ image: url(:/acuuIcon/weather/33-s.png);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">border-radius:104px;
-
-image: url(:/acuuIcon/weather/12-s.png);</string>
+</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QLabel" name="smalcircul1">
@@ -1745,8 +1747,8 @@ font: 25px &quot;Impact&quot;;</string>
    <widget class="QLabel" name="timeShow1">
     <property name="geometry">
      <rect>
-      <x>550</x>
-      <y>570</y>
+      <x>625</x>
+      <y>860</y>
       <width>321</width>
       <height>41</height>
      </rect>
@@ -1756,7 +1758,7 @@ font: 25px &quot;Impact&quot;;</string>
 font: 25px &quot;Impact&quot;;</string>
     </property>
     <property name="text">
-     <string>, Sunday, 16 January 2022</string>
+     <string>,  Sunday , 16 January 2022</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1765,8 +1767,8 @@ font: 25px &quot;Impact&quot;;</string>
    <widget class="QLabel" name="timeShow2">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>570</y>
+      <x>455</x>
+      <y>860</y>
       <width>161</width>
       <height>41</height>
      </rect>
@@ -1777,6 +1779,46 @@ font: 25px &quot;Impact&quot;;</string>
     </property>
     <property name="text">
      <string>13:40:38</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="forecast5d">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>570</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 25px &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>5 Day Forecast</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="forecast8h">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>30</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 25px &quot;Impact&quot;;</string>
+    </property>
+    <property name="text">
+     <string>8 Hour Forecast</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1842,6 +1884,8 @@ font: 25px &quot;Impact&quot;;</string>
    <zorder>error</zorder>
    <zorder>timeShow1</zorder>
    <zorder>timeShow2</zorder>
+   <zorder>forecast5d</zorder>
+   <zorder>forecast8h</zorder>
   </widget>
  </widget>
  <tabstops>
