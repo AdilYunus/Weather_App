@@ -257,33 +257,8 @@ border-bottom-left-radius: 0px;
 border-width: 1px;border-style: solid;border-color: rgb(0, 0, 0);background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>-1</number>
    </property>
-   <item>
-    <property name="text">
-     <string>Select City</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Rotterdam</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Amsterdam</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Den Haag</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Utrecht</string>
-    </property>
-   </item>
   </widget>
   <widget class="QComboBox" name="selectCountry">
    <property name="geometry">
@@ -317,33 +292,8 @@ border-bottom-left-radius: 20px;
 border-width: 1px;border-style: solid;border-color: rgb(0, 0, 0);background-color: rgb(255, 255, 255);</string>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>-1</number>
    </property>
-   <item>
-    <property name="text">
-     <string>Select Country</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Rotterdam</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Amsterdam</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Den Haag</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Utrecht</string>
-    </property>
-   </item>
   </widget>
   <widget class="QLabel" name="welcome">
    <property name="geometry">
