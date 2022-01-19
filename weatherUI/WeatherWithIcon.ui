@@ -1736,9 +1736,9 @@ color: rgb(0, 255, 0);</string>
    <widget class="QLabel" name="timeShow1">
     <property name="geometry">
      <rect>
-      <x>625</x>
+      <x>586</x>
       <y>860</y>
-      <width>321</width>
+      <width>311</width>
       <height>41</height>
      </rect>
     </property>
@@ -1747,7 +1747,7 @@ color: rgb(0, 255, 0);</string>
 font: 25px &quot;Impact&quot;;</string>
     </property>
     <property name="text">
-     <string>,  Sunday , 16 January 2022</string>
+     <string> Wednesday , 16 January 2022</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1756,7 +1756,7 @@ font: 25px &quot;Impact&quot;;</string>
    <widget class="QLabel" name="timeShow2">
     <property name="geometry">
      <rect>
-      <x>455</x>
+      <x>410</x>
       <y>860</y>
       <width>161</width>
       <height>41</height>
